@@ -16,6 +16,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
+    <style>
+    /* Style de la section Large Cover Image */
+    .large-cover-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Met la section en arrière-plan */
+    }
+
+    .large-cover-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.3; /* Ajuste l'opacité selon tes besoins */
+    }
+</style>
+
+
+
+
     <!-- Bootstrap CSS / Color Scheme -->
     <link rel="stylesheet" href="css/default.css" id="theme-color">
 </head>
@@ -46,9 +68,11 @@
         </nav>
     </div>
 </section>
-
+<div class="large-cover-image">
+    <img src="img/cover.jpg" alt="Large Cover Image">
+</div>
 <!--intro section-->
-<section class="py-7 py-md-0 bg-hero" id="home">
+<section class="py-7 py-md-0" id="home">
     <div class="container">
         <div class="row vh-md-100">
             <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
@@ -64,7 +88,7 @@
 </section>
 
 <!--features section-->
-<section class="py-7 bg-dark section-angle top-left bottom-left" id="features">
+<section class="py-7  top-left bottom-left" id="features">
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto text-center">
@@ -113,7 +137,7 @@
         <div class="row">
             <div>
                 <h5>About Vehicle Tracking</h5>
-                <p class="text-muted">
+                <p class="card-text">
                     As a student at <a href="https://www.holbertonschool.fr/">Hoberthon School</a>, I learned the fundamentals of computer development during my first year, with a focus on both back-end and front-end web development. To showcase the acquired skills, there's nothing better than creating a personal portfolio. The idea of developing <a href="https://github.com/MarcP70/portfolio-vehicule_tracking">Vehicle Tracking</a> naturally occurred to me.
 
 While personally maintaining my vehicles, I used to jot down follow-ups on paper. However, the need to record, organize, and archive these notes properly consumed a significant amount of time, with the constant risk of losing information. To address this issue, I created a web application that ensures data preservation, coupled with its user-friendly simplicity.
